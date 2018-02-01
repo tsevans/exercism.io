@@ -7,7 +7,7 @@ import "strings"
 func Abbreviate(s string) string {
 
 	words := strings.FieldsFunc(s, Split)
-	var acronym string = ""
+	var acronym string
 
 	for _, w := range words {
 		l := w[:1]
